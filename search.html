@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Search – The Blog Nest</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pencarian – The Blog Nest</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header>
     <a href="index.html" class="logo">The Blog Nest</a>
-    <nav class="main-nav">
+    <nav>
       <a href="index.html">Home</a>
       <a href="search.html">Search</a>
       <a href="login.html">Login</a>
@@ -17,23 +17,18 @@
     </nav>
   </header>
 
-  <main class="container">
+  <div class="container">
     <h2>Pencarian Artikel</h2>
-    <form class="search-form">
-      <input type="text" placeholder="Cari judul atau kata kunci..." />
-      <input type="date" name="start_date" />
-      <input type="date" name="end_date" />
-      <button type="submit" class="btn btn-primary">Cari</button>
+    <form action="search.html" method="get">
+      <label for="q">Kata kunci</label>
+      <input type="text" id="q" name="q" placeholder="Cari…">
+      <button type="submit" class="button">Cari</button>
     </form>
+    <!-- Hasil pencarian sebagai .card -->
+  </div>
 
-    <section class="articles-grid">
-      <article class="card">
-        <img src="https://via.placeholder.com/300x160" alt="Thumbnail" class="card-img" />
-        <h3 class="card-title">Hasil Artikel</h3>
-        <p class="card-meta">oleh Penulis • 10 Mei 2025</p>
-        <a href="read.html" class="btn btn-primary">Baca</a>
-      </article>
-      <!-- Tambahkan hasil pencarian -->
-    </section>
-  </main>
+  <footer>
+    &copy; 2025 The Blog Nest
+  </footer>
+</body>
 </html>

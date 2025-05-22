@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Login – The Blog Nest</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header>
     <a href="index.html" class="logo">The Blog Nest</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="search.html">Search</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
   </header>
 
-  <main>
-    <form action="#" method="post">
-      <h2>Login</h2>
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username" required />
-
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" required />
-
-      <button type="submit" class="btn btn-primary">Login</button>
+  <div class="container">
+    <h2>Login</h2>
+    <form>
+      <label for="user">Username</label>
+      <input type="text" id="user" name="user">
+      <label for="pass">Password</label>
+      <input type="password" id="pass" name="pass">
+      <button type="submit" class="button">Login</button>
     </form>
-  </main>
+  </div>
+
+  <footer>
+    &copy; 2025 The Blog Nest
+  </footer>
 </body>
 </html>

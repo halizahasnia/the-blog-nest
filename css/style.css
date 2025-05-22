@@ -1,147 +1,143 @@
-/* Reset dasar */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-:root {
-  --clr-primary: #6200ee;
-  --clr-secondary: #ffd600;
-  --clr-bg: #f5f5f5;
-  --clr-text: #333;
-  --ff-base: 'Poppins', sans-serif;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* BODY */
 body {
-  font-family: var(--ff-base);
-  background: var(--clr-bg);
-  color: var(--clr-text);
-  line-height: 1.6;
+  font-family: sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.4;
 }
 
-/* Header & Navigasi */
-.site-header {
-  background: var(--clr-primary);
-  color: #fff;
-  padding: 1rem;
+/* HEADER */
+header {
+  background-color: #de2db1;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.site-header .logo {
-  font-size: 1.5rem;
-  text-decoration: none;
+header .logo {
   color: #fff;
+  text-decoration: none;
+  font-size: 24px;
 }
-.main-nav a {
-  margin-left: 1rem;
-  text-decoration: none;
+nav a {
   color: #fff;
+  text-decoration: none;
+  margin-left: 12px;
+  font-size: 14px;
+}
+nav a:hover {
+  text-decoration: underline;
 }
 
-/* Container & Grid Artikel */
+/* CONTAINER */
 .container {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
 }
-.articles-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-}
+
+/* CARD */
 .card {
   background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 20px;
 }
-.card-img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
 }
-.card-title {
-  font-size: 1.25rem;
-  margin: 0.75rem 1rem 0.5rem;
+.card p {
+  font-size: 13px;
+  margin-bottom: 10px;
 }
-.card-meta {
-  font-size: 0.875rem;
-  color: #666;
-  margin: 0 1rem 0.75rem;
+.card-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
-/* Tombol */
-.btn {
+/* BUTTON */
+.button {
   display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  background: #de2db1;
+  color: #fff;
+  padding: 6px 12px;
   text-decoration: none;
-  font-weight: 500;
-  text-align: center;
+  border-radius: 4px;
+  font-size: 13px;
 }
-.btn-primary {
-  background: var(--clr-secondary);
-  color: var(--clr-text);
-  margin: 0 1rem 1rem;
-}
-.btn-icon {
-  display: inline-flex;
-  align-items: center;
-}
-.btn-icon svg {
-  width: 1rem;
-  height: 1rem;
-  margin-right: 0.5rem;
-  fill: currentColor;
+.button:hover {
+  background: #c01a99;
 }
 
-/* Form */
+/* FORM */
 form {
   background: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  max-width: 400px;
-  margin: 2rem auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 form label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 5px;
+  font-size: 14px;
 }
 form input,
 form textarea {
   width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
+  padding: 8px;
+  margin-bottom: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-size: 14px;
 }
 
-/* Table (Manage) */
+/* TABLE */
 table {
   width: 100%;
   border-collapse: collapse;
   background: #fff;
-  margin: 2rem 0;
+  margin-bottom: 20px;
 }
 table th,
 table td {
-  padding: 0.75rem;
-  border: 1px solid #e0e0e0;
+  padding: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
   text-align: left;
 }
 table tr:nth-child(even) {
-  background: #fafafa;
+  background: #f9f9f9;
 }
 
-/* Responsiveness */
-@media (max-width: 600px) {
-  .site-header {
+/* FOOTER */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  padding: 15px 0;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px) {
+  header {
     flex-direction: column;
     text-align: center;
   }
-  .main-nav {
-    margin-top: 0.5rem;
-  }
-  .articles-grid {
-    grid-template-columns: 1fr;
+  nav a {
+    margin: 8px;
   }
 }

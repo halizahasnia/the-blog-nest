@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manage Artikel – The Blog Nest</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manage – The Blog Nest</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header>
     <a href="index.html" class="logo">The Blog Nest</a>
-    <nav class="main-nav">
+    <nav>
       <a href="index.html">Home</a>
       <a href="search.html">Search</a>
       <a href="login.html">Login</a>
@@ -17,9 +17,8 @@
     </nav>
   </header>
 
-  <main class="container">
+  <div class="container">
     <h2>Manage Artikel</h2>
-    <a href="register.html" class="btn btn-primary">Buat Artikel Baru</a>
     <table>
       <thead>
         <tr>
@@ -33,12 +32,16 @@
           <td>Judul Contoh</td>
           <td>12 Mei 2025</td>
           <td>
-            <button class="btn-icon"><svg><!-- icon edit --></svg>Edit</button>
-            <button class="btn-icon"><svg><!-- icon delete --></svg>Delete</button>
+            <a href="#" class="button">Edit</a>
+            <a href="#" class="button">Hapus</a>
           </td>
         </tr>
-        <!-- Tambahkan baris artikel -->
       </tbody>
     </table>
-  </main>
+  </div>
+
+  <footer>
+    &copy; 2025 The Blog Nest
+  </footer>
+</body>
 </html>
